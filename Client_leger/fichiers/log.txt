@@ -1,0 +1,64 @@
+2019-05-06 10:48:12,090 [FormulaireConnexion.java:http-nio-8080-exec-20:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:48:13,282 [               Deco.java:http-nio-8080-exec-17:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:50:23,396 [FormulaireConnexion.java:http-nio-8080-exec-24:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:53:10,584 [               Deco.java:http-nio-8080-exec-24:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:57:45,758 [FormulaireConnexion.java:http-nio-8080-exec-28:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:59:34,779 [               Deco.java:http-nio-8080-exec-30:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 10:59:36,618 [FormulaireConnexion.java:http-nio-8080-exec-23:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:04:40,433 [    logTransactions.java:http-nio-8080-exec-37:24] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:25] - Login -- Moyen -- Date de Transaction -- Montant -- Description
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE COURANT -- ESPECE -- 03-05-2019 16:30:41 -- 200 -- Aucune description
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE EPARGNE -- VIREMENT -- 03-05-2019 16:30:50 -- 50 -- Aucune description
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - CHABAL -- VIREMENT -- 03-05-2019 16:33:16 -- 10 -- MCDO
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE COURANT -- VIR INTERNE DEPUIS EPARNGE -- 03-05-2019 16:34:49 -- 10 -- VIREMENT EPARGNE
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - CHABAL -- VIREMENT -- 04-05-2019 15:33:57 -- 25 -- TEST LOG
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE COURANT -- ESPECE -- 06-05-2019 10:57:50 -- 10 -- Aucune description
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE COURANT -- ESPECE -- 06-05-2019 11:00:15 -- 10 -- Aucune description
+2019-05-06 11:04:40,434 [    logTransactions.java:http-nio-8080-exec-37:28] - COMPTE EPARGNE -- VIREMENT -- 06-05-2019 11:02:03 -- 10 -- Aucune description
+2019-05-06 11:05:34,627 [    logTransactions.java:http-nio-8080-exec-33:24] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:25] - Login -- Moyen -- Date de Transaction -- Montant -- Description
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE COURANT -- ESPECE -- 03-05-2019 16:30:41 -- 200 -- Aucune description
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE EPARGNE -- VIREMENT -- 03-05-2019 16:30:50 -- 50 -- Aucune description
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - CHABAL -- VIREMENT -- 03-05-2019 16:33:16 -- 10 -- MCDO
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE COURANT -- VIR INTERNE DEPUIS EPARNGE -- 03-05-2019 16:34:49 -- 10 -- VIREMENT EPARGNE
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - CHABAL -- VIREMENT -- 04-05-2019 15:33:57 -- 25 -- TEST LOG
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE COURANT -- ESPECE -- 06-05-2019 10:57:50 -- 10 -- Aucune description
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE COURANT -- ESPECE -- 06-05-2019 11:00:15 -- 10 -- Aucune description
+2019-05-06 11:05:34,629 [    logTransactions.java:http-nio-8080-exec-33:28] - COMPTE EPARGNE -- VIREMENT -- 06-05-2019 11:02:03 -- 10 -- Aucune description
+2019-05-06 11:50:29,625 [    logTransactions.java:http-nio-8080-exec-17:24] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 12:00:11,376 [    logTransactions.java:http-nio-8080-exec-22:24] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 12:00:20,682 [    logTransactions.java:http-nio-8080-exec-22:24] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 12:04:21,351 [    logTransactions.java:http-nio-8080-exec-27:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 12:07:40,519 [    logTransactions.java:http-nio-8080-exec-39:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 12:07:40,537 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 03-05-2019 16:30:41 -- MONTANT : 200 -- DESCRIPTION : Aucune description
+2019-05-06 12:07:40,537 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :COMPTE EPARGNE -- DATE : 03-05-2019 16:30:50 -- MONTANT : 50 -- DESCRIPTION : Aucune description
+2019-05-06 12:07:40,537 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :CHABAL -- DATE : 03-05-2019 16:33:16 -- MONTANT : 10 -- DESCRIPTION : MCDO
+2019-05-06 12:07:40,537 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :VIR INTERNE DEPUIS EPARNGE -- MOYEN :COMPTE COURANT -- DATE : 03-05-2019 16:34:49 -- MONTANT : 10 -- DESCRIPTION : VIREMENT EPARGNE
+2019-05-06 12:07:40,537 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :CHABAL -- DATE : 04-05-2019 15:33:57 -- MONTANT : 25 -- DESCRIPTION : TEST LOG
+2019-05-06 12:07:40,538 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 10:57:50 -- MONTANT : 10 -- DESCRIPTION : Aucune description
+2019-05-06 12:07:40,538 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 11:00:15 -- MONTANT : 10 -- DESCRIPTION : Aucune description
+2019-05-06 12:07:40,538 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :COMPTE EPARGNE -- DATE : 06-05-2019 11:02:03 -- MONTANT : 10 -- DESCRIPTION : Aucune description
+2019-05-06 12:07:40,538 [    logTransactions.java:http-nio-8080-exec-39:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 11:49:57 -- MONTANT : 70 -- DESCRIPTION : Aucune description
+2019-05-06 16:44:32,468 [    logTransactions.java:http-nio-8080-exec-22:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 16:44:32,476 [    logTransactions.java:http-nio-8080-exec-22:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:38:48 -- MONTANT : 1 -- DESCRIPTION : Aucune description
+2019-05-06 16:45:28,640 [    logTransactions.java:http-nio-8080-exec-26:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 16:45:28,641 [    logTransactions.java:http-nio-8080-exec-26:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:38:48 -- MONTANT : 1 -- DESCRIPTION : Aucune description
+2019-05-06 16:52:54,753 [    logTransactions.java:http-nio-8080-exec-28:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-06 16:52:54,753 [    logTransactions.java:http-nio-8080-exec-28:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:38:48 -- MONTANT : 1 -- DESCRIPTION : Aucune description
+2019-05-06 16:52:54,754 [    logTransactions.java:http-nio-8080-exec-28:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:50:07 -- MONTANT : 12346 -- DESCRIPTION : Aucune description
+2019-05-09 11:39:43,471 [    logTransactions.java:http-nio-8080-exec-2:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-09 11:39:43,476 [    logTransactions.java:http-nio-8080-exec-2:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:50:07 -- MONTANT : 12346 -- DESCRIPTION : Aucune description
+2019-05-09 11:39:43,477 [    logTransactions.java:http-nio-8080-exec-2:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:37:19 -- MONTANT : 10 -- DESCRIPTION : PREMIER VIREMENT
+2019-05-09 11:39:43,477 [    logTransactions.java:http-nio-8080-exec-2:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:37:39 -- MONTANT : 100 -- DESCRIPTION : LIQUIDE
+2019-05-09 11:39:43,477 [    logTransactions.java:http-nio-8080-exec-2:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :COMPTE EPARGNE -- DATE : 09-05-2019 11:37:54 -- MONTANT : 20 -- DESCRIPTION : VIREMENT EPARGNE
+2019-05-09 11:39:43,477 [    logTransactions.java:http-nio-8080-exec-2:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT EXTERNE -- MOYEN :CHABAL -- DATE : 09-05-2019 11:39:08 -- MONTANT : -50 -- DESCRIPTION : DONATION
+2019-05-09 11:53:38,273 [    logTransactions.java:http-nio-8080-exec-7:25] - -----------------------------------Nouvel enregistrement------------------------------------------
+2019-05-09 11:53:38,275 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 06-05-2019 16:50:07 -- MONTANT : 12346 -- DESCRIPTION : Aucune description
+2019-05-09 11:53:38,275 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:37:19 -- MONTANT : 10 -- DESCRIPTION : PREMIER VIREMENT
+2019-05-09 11:53:38,275 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:37:39 -- MONTANT : 100 -- DESCRIPTION : LIQUIDE
+2019-05-09 11:53:38,275 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :COMPTE EPARGNE -- DATE : 09-05-2019 11:37:54 -- MONTANT : 20 -- DESCRIPTION : VIREMENT EPARGNE
+2019-05-09 11:53:38,275 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT EXTERNE -- MOYEN :CHABAL -- DATE : 09-05-2019 11:39:08 -- MONTANT : -50 -- DESCRIPTION : DONATION
+2019-05-09 11:53:38,276 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:48:41 -- MONTANT : 100 -- DESCRIPTION : PREMIER VIREMENT
+2019-05-09 11:53:38,276 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :ESPECE -- MOYEN :COMPTE COURANT -- DATE : 09-05-2019 11:51:27 -- MONTANT : 100 -- DESCRIPTION : PREMIER VIREMENT
+2019-05-09 11:53:38,276 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT -- MOYEN :COMPTE EPARGNE -- DATE : 09-05-2019 11:51:39 -- MONTANT : 20 -- DESCRIPTION : VIREMENT EPARGNE
+2019-05-09 11:53:38,276 [    logTransactions.java:http-nio-8080-exec-7:28] - LOGIN : 0 -- BENEFICIAIRE :VIREMENT EXTERNE -- MOYEN :CHABAL2 -- DATE : 09-05-2019 11:52:30 -- MONTANT : -50 -- DESCRIPTION : DONATION

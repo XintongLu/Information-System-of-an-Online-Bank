@@ -1,0 +1,83 @@
+2019-05-06 11:00:06,096 [FormulaireConnexion.java:http-nio-8080-exec-25:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:00:06,843 [               Deco.java:http-nio-8080-exec-32:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:00:09,317 [FormulaireConnexion.java:http-nio-8080-exec-34:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:01:53,956 [               Deco.java:http-nio-8080-exec-34:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:01:56,038 [FormulaireConnexion.java:http-nio-8080-exec-37:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:04:27,329 [               Deco.java:http-nio-8080-exec-31:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:49:48,729 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 11:50:01,674 [               Deco.java:http-nio-8080-exec-7:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 12:00:12,672 [FormulaireConnexion.java:http-nio-8080-exec-25:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 12:24:41,526 [FormulaireConnexion.java:http-nio-8080-exec-39:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 12:35:22,444 [FormulaireConnexion.java:http-nio-8080-exec-46:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 12:35:23,210 [               Deco.java:http-nio-8080-exec-57:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 12:35:29,387 [FormulaireConnexion.java:http-nio-8080-exec-53:71] - L'utilisateur n°0 : usersd vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 12:39:05,247 [FormulaireConnexion.java:http-nio-8080-exec-59:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 12:39:07,138 [FormulaireConnexion.java:http-nio-8080-exec-60:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 12:39:08,673 [               Deco.java:http-nio-8080-exec-56:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 12:46:55,147 [FormulaireConnexion.java:http-nio-8080-exec-58:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 12:46:56,680 [FormulaireConnexion.java:http-nio-8080-exec-59:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 13:21:05,859 [FormulaireConnexion.java:http-nio-8080-exec-54:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 13:21:13,833 [FormulaireConnexion.java:http-nio-8080-exec-58:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 13:48:33,379 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 13:48:54,694 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 13:48:57,761 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°0 : manager vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 13:53:11,261 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 13:53:37,860 [               Deco.java:http-nio-8080-exec-2:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 13:53:51,876 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 13:54:21,437 [               Deco.java:http-nio-8080-exec-9:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 13:56:29,134 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 14:20:12,484 [FormulaireConnexion.java:http-nio-8080-exec-7:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 14:24:44,326 [               Deco.java:http-nio-8080-exec-6:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:04:23,518 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 15:04:36,339 [               Deco.java:http-nio-8080-exec-6:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:04:49,632 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 15:05:05,991 [               Deco.java:http-nio-8080-exec-7:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:05:30,735 [FormulaireConnexion.java:http-nio-8080-exec-10:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 15:05:46,286 [               Deco.java:http-nio-8080-exec-9:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:05:59,914 [FormulaireConnexion.java:http-nio-8080-exec-4:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 15:06:10,024 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:08:03,987 [FormulaireConnexion.java:http-nio-8080-exec-7:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 15:08:18,667 [               Deco.java:http-nio-8080-exec-1:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 15:25:56,142 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 15:26:40,355 [FormulaireConnexion.java:http-nio-8080-exec-5:71] - L'utilisateur n°0 : test ca va pas marcher vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 16:06:17,875 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 16:19:25,857 [FormulaireConnexion.java:http-nio-8080-exec-1:71] - L'utilisateur n°0 : admin1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 16:19:32,716 [FormulaireConnexion.java:http-nio-8080-exec-2:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 16:19:56,390 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°36 : user1 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 16:20:14,203 [FormulaireConnexion.java:http-nio-8080-exec-2:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 16:20:23,265 [               Deco.java:http-nio-8080-exec-6:66] - L'utilisateur n°36 : user1 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 16:49:37,550 [FormulaireConnexion.java:http-nio-8080-exec-26:71] - L'utilisateur n°0 : manager vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-06 16:49:54,737 [FormulaireConnexion.java:http-nio-8080-exec-29:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 16:50:09,545 [               Deco.java:http-nio-8080-exec-31:66] - L'utilisateur n°36 : user1 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 16:53:30,760 [FormulaireConnexion.java:http-nio-8080-exec-31:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 16:55:04,012 [               Deco.java:http-nio-8080-exec-27:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-06 17:21:00,833 [FormulaireConnexion.java:http-nio-8080-exec-31:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 17:21:22,857 [               Deco.java:http-nio-8080-exec-24:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:03:50,674 [FormulaireConnexion.java:http-nio-8080-exec-10:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:09:31,291 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:09:34,036 [FormulaireConnexion.java:http-nio-8080-exec-3:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:10:57,732 [               Deco.java:http-nio-8080-exec-3:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:11:00,532 [FormulaireConnexion.java:http-nio-8080-exec-6:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:12:19,320 [               Deco.java:http-nio-8080-exec-5:66] - L'utilisateur n°0 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:12:28,398 [FormulaireConnexion.java:http-nio-8080-exec-7:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-09 11:12:43,343 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:13:16,746 [               Deco.java:http-nio-8080-exec-8:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:13:19,093 [FormulaireConnexion.java:http-nio-8080-exec-1:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:18:05,610 [               Deco.java:http-nio-8080-exec-6:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:29:25,814 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:29:27,268 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:37:00,089 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:39:19,945 [               Deco.java:http-nio-8080-exec-1:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:48:04,929 [FormulaireConnexion.java:http-nio-8080-exec-4:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:50:01,256 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 11:51:16,498 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 11:53:13,353 [               Deco.java:http-nio-8080-exec-6:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-09 12:05:49,029 [FormulaireConnexion.java:http-nio-8080-exec-5:71] - L'utilisateur n°34 : nicolas56 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-09 12:07:42,540 [               Deco.java:http-nio-8080-exec-10:66] - L'utilisateur n°34 : nicolas56 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-11 11:51:05,852 [FormulaireConnexion.java:http-nio-8080-exec-5:71] - L'utilisateur n°0 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-11 11:51:12,592 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-13 14:10:54,221 [FormulaireConnexion.java:http-nio-8080-exec-4:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-13 16:17:32,894 [FormulaireConnexion.java:http-nio-8080-exec-2:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-13 16:18:23,108 [               Deco.java:http-nio-8080-exec-8:66] - L'utilisateur n°36 : user1 vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
+2019-05-14 13:52:23,196 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°0 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : connexion échouée
+2019-05-14 13:52:26,661 [FormulaireConnexion.java:http-nio-8080-exec-9:71] - L'utilisateur n°36 : user1 vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie

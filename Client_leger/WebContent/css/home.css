@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.container2 {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 65px; /* Some padding */
+}
+
+.container1 {
+  position: relative; 
+  max-width: 100000px; /* Maximum width */
+/* Center it */
+}
+
+.container1 .content1 {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 40px; /* Some padding */
+}
+
+
+.section-2 .reveal-demo {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 4em;
+}

@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+  
+.fg{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+
+.Etapes
+{
+ display: flex;  /* bach yjiw f la meme ligne  */
+  justify-content: space-around;/*  bach yjiw mfar9in */
+
+} 
+
+.Head
+{
+	display: flex;
+ 
+}

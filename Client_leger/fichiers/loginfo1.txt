@@ -1,0 +1,2 @@
+2019-05-06 16:38:40,340 [FormulaireConnexion.java:http-nio-8080-exec-8:71] - L'utilisateur n°34 : user vient de se connecter - Adresse IP : 0:0:0:0:0:0:0:1Etat de la connexion : Connexion réussie
+2019-05-06 16:39:44,987 [               Deco.java:http-nio-8080-exec-16:66] - L'utilisateur n°34 : user vient de se deconnecter - Adresse IP : 0:0:0:0:0:0:0:1
