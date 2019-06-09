@@ -1,0 +1,508 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 4.5.4.1
+-- http://www.phpmyadmin.net
+--
+-- Client :  localhost
+-- Généré le :  Mar 21 Mai 2019 à 15:02
+-- Version du serveur :  5.7.11
+-- Version de PHP :  5.6.18
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `banque_en_ligne_tic3_grp1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `actions`
+--
+
+CREATE TABLE `actions` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `dernier` float NOT NULL,
+  `id_client` int(11) NOT NULL,
+  `nombre` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `actualite`
+--
+
+CREATE TABLE `actualite` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `date` date DEFAULT NULL,
+  `auteur` varchar(20) DEFAULT NULL,
+  `contenu` text NOT NULL,
+  `photoPath` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `actualite`
+--
+
+INSERT INTO `actualite` (`id`, `titre`, `date`, `auteur`, `contenu`, `photoPath`) VALUES
+(1, 'Accelerate Business For Good : rendez-vous le 2 avril à Lyon', '2019-03-05', 'bnp', 'A l\'affiche de cette nouvelle édition, une table-ronde autour de l\'économie à impact positif dans la région yonnaise, des pitch de start-ups prometteuses, des business cases d\'entreprises vertueuses et des ateliers de travail pour dénicher les meilleures pratiques et accélérer le développement du business à impact positif.', 'actualite1.PNG'),
+(2, 'La semaine économique : Etats-Unis,  les « dots » créent le malaise', '2019-03-22', 'William De Vijlder', 'Les nouvelles projections des membres du Comité de politique monétaire de la Fed (FOMC) donnent à réfléchir. Les projections de croissance médiane ont été révisées à la baisse pour 2019, de 2,3 % à 2,1 %, mais aussi pour 2020 (de 2,0 % à 1,9 %). L’évolution de la fourchette des projections individuelles pour 2019 est plus significative (de 2,0-2,7 % à 1,6-2,4 %). Le taux de chômage est attendu à 3,7 % (contre 3,5 %) à la fin de cette année. La projection pour l’inflation sousjacente est restée inchangée. Le plus frappant est peut-être l’ajustement à la baisse de 50 points de base de la projection des taux des Fonds fédéraux, désormais attendus à 2,4 % à la fin de 2019 et à 2,6 % ensuite jusqu’à la fin de 2021, impliquant un seul relèvement, en 2020. ', 'actualite2.PNG'),
+(3, 'abc', NULL, NULL, 'def', 'actualite1.PNG');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `login` varchar(60) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `nom` varchar(60) NOT NULL,
+  `prenom` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `admin`
+--
+
+INSERT INTO `admin` (`id`, `login`, `password`, `nom`, `prenom`) VALUES
+(1, 'admin1', 'administrateur', 'Chabal', 'Nicolas');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `alimenter`
+--
+
+CREATE TABLE `alimenter` (
+  `id` int(50) NOT NULL,
+  `montant` varchar(255) NOT NULL,
+  `moyen_paiement` varchar(255) NOT NULL,
+  `numero_carte` varchar(255) NOT NULL,
+  `cvc` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `id_client` int(50) NOT NULL,
+  `beneficiaire` varchar(255) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `dateVir` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `alimenter`
+--
+
+INSERT INTO `alimenter` (`id`, `montant`, `moyen_paiement`, `numero_carte`, `cvc`, `date`, `id_client`, `beneficiaire`, `description`, `dateVir`) VALUES
+(333, '100', 'ESPECE', 'null', 'null', 'null', 34, 'COMPTE COURANT', 'PREMIER VIREMENT', '09-05-2019 12:06:01'),
+(334, '20', 'VIREMENT', 'null', 'null', 'null', 34, 'COMPTE EPARGNE', 'VIREMENT EPARGNE', '09-05-2019 12:06:12'),
+(335, '-50', 'VIREMENT EXTERNE', 'null', 'null', 'null', 34, 'Nicolas', 'DONATION', '09-05-2019 12:07:06'),
+(336, '50', 'ESPECE', 'null', 'null', 'null', 36, 'COMPTE COURANT', NULL, '13-05-2019 16:17:47');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `beneficiaire`
+--
+
+CREATE TABLE `beneficiaire` (
+  `id` int(255) NOT NULL,
+  `idClient` int(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `iban` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `beneficiaire`
+--
+
+INSERT INTO `beneficiaire` (`id`, `idClient`, `nom`, `iban`) VALUES
+(25, 34, 'CHABAL', 'FR7630001007941234567890185'),
+(26, 34, 'CHABAL2', 'FR7630001007941234567890185'),
+(27, 34, 'Nicolas', 'FR7630001007941234567890185');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `client`
+--
+
+CREATE TABLE `client` (
+  `id` int(11) NOT NULL,
+  `sexe` varchar(50) DEFAULT NULL,
+  `nom` varchar(50) DEFAULT NULL,
+  `prenom` varchar(50) DEFAULT NULL,
+  `login` varchar(50) DEFAULT NULL,
+  `nationalite` varchar(50) DEFAULT NULL,
+  `date` varchar(50) DEFAULT NULL,
+  `tel` varchar(50) DEFAULT NULL,
+  `adresse` varchar(50) DEFAULT NULL,
+  `ville` varchar(50) DEFAULT NULL,
+  `cp` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` char(50) DEFAULT NULL,
+  `solde` float NOT NULL,
+  `etatEpargne` int(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `client`
+--
+
+INSERT INTO `client` (`id`, `sexe`, `nom`, `prenom`, `login`, `nationalite`, `date`, `tel`, `adresse`, `ville`, `cp`, `email`, `password`, `solde`, `etatEpargne`) VALUES
+(34, 'Homme', 'Chabal', 'Nicolas', 'nicolas56', 'France', '07/08/1997', '0651084029', '18 rue de tanger 76000', 'Sotteville-lès-Rouen', '76300', 'nchabal44@gmail.com', 'Password56', 30, 0),
+(35, NULL, 'Chabal', 'Thomas', 'client56', 'France', '18/12/1980', '0651084028', NULL, 'Rouen', '76000', 'tchabal44@gmail.com', 'client56', 0, 0),
+(36, NULL, 'Christophe', 'Mae', 'user1', 'Francias', '08/07/1997', '06510840127', NULL, 'Rouen', '76000', 'nchabal44@gmail.com', 'root12', 3566, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `civilite` varchar(60) NOT NULL,
+  `nom` varchar(60) NOT NULL,
+  `prenom` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `tel` varchar(60) NOT NULL,
+  `adresse` varchar(60) NOT NULL,
+  `cp` varchar(60) NOT NULL,
+  `ville` varchar(60) NOT NULL,
+  `pays` varchar(60) NOT NULL,
+  `sujet` varchar(60) NOT NULL,
+  `message` varchar(300) NOT NULL,
+  `reponse` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `contact`
+--
+
+INSERT INTO `contact` (`id`, `civilite`, `nom`, `prenom`, `email`, `tel`, `adresse`, `cp`, `ville`, `pays`, `sujet`, `message`, `reponse`) VALUES
+(1, 'Monsieur', 'Chabal', 'Nicolas', 'nchabal44@gmail.com', '0651084027', '50 bis rue du renbard', '76000', 'Roouen', '76000', 'option1', 'Devrais-je resilier mon compte ?\r\nQue pensez vous de cela ?\r\nJe ne sais pas quoi faire lol', 'option1'),
+(2, 'Monsieur', 'dfghyu', 'cgh', 'nchabal44@gmail.com', '0612345789', 'Technopôle du Madrillet, Avenue Galilée,', '76800', 'Saint-Étienne-du-Rouvray', 'France', 'obtenir des informations sur un produit ou un service', 'bonjour', 'par\r\n														téléphone'),
+(3, 'Monsieur', 'bouzbouz', 'Fadoua', 'bouzbouz@esigelec.fr', '0612345789', 'Technopôle du Madrillet, Avenue Galilée,', '76800', 'Saint-Étienne-du-Rouvray', 'France', 'devenir client', 'Bonjour', 'par\r\n														email'),
+(4, 'Monsieur', 'Chabal', 'Nicolas', 'nchabal44@gmail.com', '025488789', '21 Rue Pierre Bourdan', '78160', 'Marly-le-Roi', 'France', 'devenir client', 'Je souhaite devenir client svp que dois-je faire ?', 'par\r\n														téléphone'),
+(5, 'Monsieur', 'Nicolas', 'Chabal', 'nchabal44@gmail.com', '0651084027', '25 rue du ren', '76000', 'Rouen', 'France', 'devenir client', 'J\'aimerais devenir client, quelle est la procédure à suivre svp ?', 'par\r\n														téléphone'),
+(6, 'Civilité', 'CHABAL', 'Nicolas', 'nchabal44@gmail.com', '0651084027', '21 Rue Pierre Bourdan', '78160', 'Marly-le-Roi', 'France', 'devenir client', 'J\'aimerais devenir client quelle est la procédure à suivre svp ?', 'par\r\n														email'),
+(7, 'Monsieur', 'CHABAL', 'Nicolas', 'nchabal44@gmail.com', '0651084027', '21 Rue Pierre Bourdan', '78160', 'Marly-le-Roi', 'France', 'devenir client', 'J\'aimerais devenir client quelle sont les démarches à suivre svp ?', 'par\r\n														email');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `epargne`
+--
+
+CREATE TABLE `epargne` (
+  `id` int(50) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `solde` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `epargne`
+--
+
+INSERT INTO `epargne` (`id`, `nom`, `prenom`, `solde`) VALUES
+(34, 'Chabal', 'Nicolas', 20),
+(35, 'Chabal', 'Thomas', 300),
+(36, 'Christophe', 'Mae', 90);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `histor_conn`
+--
+
+CREATE TABLE `histor_conn` (
+  `id` int(11) NOT NULL,
+  `id_client` int(11) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `ip` varchar(255) NOT NULL,
+  `etat` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `histor_conn`
+--
+
+INSERT INTO `histor_conn` (`id`, `id_client`, `login`, `ip`, `etat`, `date`) VALUES
+(56, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '06-05-2019 16:38:40'),
+(57, 0, 'manager', '0:0:0:0:0:0:0:1', 'connexion échouée', '06-05-2019 16:49:37'),
+(58, 36, 'user1', '0:0:0:0:0:0:0:1', 'Connexion réussie', '06-05-2019 16:49:54'),
+(59, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '06-05-2019 16:53:30'),
+(60, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '06-05-2019 17:21:00'),
+(61, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:03:50'),
+(62, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:09:33'),
+(63, 34, 'user', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:11:00'),
+(64, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'connexion échouée', '09-05-2019 11:12:28'),
+(65, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:12:43'),
+(66, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:13:19'),
+(67, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:29:25'),
+(68, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:37:00'),
+(69, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:48:04'),
+(70, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 11:51:16'),
+(71, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Connexion réussie', '09-05-2019 12:05:49'),
+(72, 0, 'user', '0:0:0:0:0:0:0:1', 'connexion échouée', '11-05-2019 11:51:05'),
+(73, 36, 'user1', '0:0:0:0:0:0:0:1', 'Connexion réussie', '11-05-2019 11:51:12'),
+(74, 36, 'user1', '0:0:0:0:0:0:0:1', 'Connexion réussie', '13-05-2019 14:10:54'),
+(75, 36, 'user1', '0:0:0:0:0:0:0:1', 'Connexion réussie', '13-05-2019 16:17:32'),
+(76, 0, 'user', '0:0:0:0:0:0:0:1', 'connexion échouée', '14-05-2019 13:52:23'),
+(77, 36, 'user1', '0:0:0:0:0:0:0:1', 'Connexion réussie', '14-05-2019 13:52:26');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `histo_deconn`
+--
+
+CREATE TABLE `histo_deconn` (
+  `id` int(11) NOT NULL,
+  `id_client` int(11) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `ip` varchar(255) NOT NULL,
+  `etat` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `histo_deconn`
+--
+
+INSERT INTO `histo_deconn` (`id`, `id_client`, `login`, `ip`, `etat`, `date`) VALUES
+(26, 34, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '06-05-2019 16:39:44'),
+(27, 36, 'user1', '0:0:0:0:0:0:0:1', 'Deconnecté', '06-05-2019 16:50:09'),
+(28, 34, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '06-05-2019 16:55:03'),
+(29, 34, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '06-05-2019 17:21:22'),
+(30, 34, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:09:31'),
+(31, 34, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:10:57'),
+(32, 0, 'user', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:12:19'),
+(33, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:13:16'),
+(34, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:18:05'),
+(35, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:29:27'),
+(36, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:39:19'),
+(37, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:50:01'),
+(38, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 11:53:13'),
+(39, 34, 'nicolas56', '0:0:0:0:0:0:0:1', 'Deconnecté', '09-05-2019 12:07:42'),
+(40, 36, 'user1', '0:0:0:0:0:0:0:1', 'Deconnecté', '13-05-2019 16:18:23');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `manager`
+--
+
+CREATE TABLE `manager` (
+  `id` int(11) NOT NULL,
+  `login` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `nom` varchar(50) NOT NULL,
+  `prenom` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `manager`
+--
+
+INSERT INTO `manager` (`id`, `login`, `password`, `nom`, `prenom`) VALUES
+(1, 'manager', '123456', 'nicolas', 'chabal');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `service`
+--
+
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(100) NOT NULL,
+  `contenu` text NOT NULL,
+  `photoPath` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `service`
+--
+
+INSERT INTO `service` (`id`, `titre`, `contenu`, `photoPath`) VALUES
+(1, 'Carte bancaire virtuelle', 'Le service fonctionne avec les cartes de paiement délivrées par votre banque. Le service Payweb Card génère les données nécessaires pour acheter sur internet. Demandé l\'activation de ce service a votre conseiller.', 'far fa-credit-card'),
+(2, 'Ouvrez un compte 100% en ligne et gérez vos opérations à distance', 'Services inclus avec votre compte :\r\n\r\n    Carte de débit V PAY\r\n    Accès sécurisé au Web Banking : site et applications\r\n    15 virements électroniques UE par mois\r\n    vos extraits électroniques\r\n    Retraits aux distributeurs BGL BNP Paribas \r\n    Retraits à l\'étranger dans les distributeurs du réseau BNP Paribas\r\n    Dépôt titres* et conseil en investissement\r\n\r\n\r\nUn suivi 100% à distance\r\n\r\n    Web Banking accessible sur PC, tablette et smartphone.\r\n    Des conseillers de notre Service Client vous répondent du lundi au vendredi de 8h à 18h au (+352) 42 42-2000', 'fas fa-money-check-alt');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `titre`
+--
+
+CREATE TABLE `titre` (
+  `id_client` int(11) NOT NULL,
+  `solde` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `titre`
+--
+
+INSERT INTO `titre` (`id_client`, `solde`) VALUES
+(34, 0),
+(36, 9961.81);
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `actions`
+--
+ALTER TABLE `actions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `actualite`
+--
+ALTER TABLE `actualite`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `alimenter`
+--
+ALTER TABLE `alimenter`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `beneficiaire`
+--
+ALTER TABLE `beneficiaire`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `epargne`
+--
+ALTER TABLE `epargne`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`),
+  ADD KEY `id_2` (`id`);
+
+--
+-- Index pour la table `histor_conn`
+--
+ALTER TABLE `histor_conn`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `histo_deconn`
+--
+ALTER TABLE `histo_deconn`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `manager`
+--
+ALTER TABLE `manager`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `service`
+--
+ALTER TABLE `service`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `titre`
+--
+ALTER TABLE `titre`
+  ADD PRIMARY KEY (`id_client`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `actions`
+--
+ALTER TABLE `actions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT pour la table `alimenter`
+--
+ALTER TABLE `alimenter`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=337;
+--
+-- AUTO_INCREMENT pour la table `beneficiaire`
+--
+ALTER TABLE `beneficiaire`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+--
+-- AUTO_INCREMENT pour la table `client`
+--
+ALTER TABLE `client`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+--
+-- AUTO_INCREMENT pour la table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT pour la table `epargne`
+--
+ALTER TABLE `epargne`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+--
+-- AUTO_INCREMENT pour la table `histor_conn`
+--
+ALTER TABLE `histor_conn`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+--
+-- AUTO_INCREMENT pour la table `histo_deconn`
+--
+ALTER TABLE `histo_deconn`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+--
+-- AUTO_INCREMENT pour la table `manager`
+--
+ALTER TABLE `manager`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT pour la table `titre`
+--
+ALTER TABLE `titre`
+  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
